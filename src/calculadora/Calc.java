@@ -1,29 +1,60 @@
 package calculadora;
 
 import javax.swing.*;
-import java.util.Scanner;
 
 public class Calc {
-    void entrada(){
-        double a = Double.parseDouble(JOptionPane.showInputDialog("Digite o valor de A: "));
-        double b = Double.parseDouble(JOptionPane.showInputDialog("Digite o valor de A: "));
+    double a, b, res;
+    String tipoOperacao;
+
+    void entrada() {
+        a = Double.parseDouble(JOptionPane.showInputDialog("Digite o valor de A: "));
+        b = Double.parseDouble(JOptionPane.showInputDialog("Digite o valor de B: "));
     }
-    void escolha{
-        Scanner entrada = new Scanner(System.in);
-        JOptionPane.showInputDialog(
+
+    void escolha() {
+        int escolha = Integer.parseInt(JOptionPane.showInputDialog(
                 "Digite 1 para soma \n" +
                         "Digite 2 para subtração \n" +
-                        "Digite 3 para multiplicação" +
+                        "Digite 3 para multiplicação \n" +
                         "Digite 4 para divisão"
-        );
-        int escolha = entrada.nextInt();
-        switch (escolha){
+        ));
+        switch (escolha) {
             case 1: // Soma
-
+                soma();
+                tipoOperacao = "soma";
+                break;
+            case 2:
+                sub();
+                tipoOperacao = "subtração";
+                break;
+            case 3:
+                mult();
+                tipoOperacao = "multiplicação";
+                break;
+            case 4:
+                div();
+                tipoOperacao = "divisão";
+                break;
         }
     }
 
-    void soma(){
+    void soma() {
+        res = a + b;
+    }
 
+    void sub() {
+        res = a - b;
+    }
+
+    void mult() {
+        res = a * b;
+    }
+
+    void div() {
+        if (b != 0) {
+            res = a / b;
+        } else {
+            JOptionPane.showMessageDialog(null, "Divisão por zero!");
+        }
     }
 }
