@@ -13,9 +13,9 @@ public class Calc {
 
     void escolha() {
         int escolha = Integer.parseInt(JOptionPane.showInputDialog(
-                "Digite 1 para soma \n" +
-                        "Digite 2 para subtração \n" +
-                        "Digite 3 para multiplicação \n" +
+                "Digite 1 para soma \n " +
+                        "Digite 2 para subtração \n " +
+                        "Digite 3 para multiplicação \n " +
                         "Digite 4 para divisão"
         ));
         switch (escolha) {
