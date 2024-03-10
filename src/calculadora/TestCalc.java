@@ -2,7 +2,7 @@ package calculadora;
 
 import javax.swing.*;
 
-public class CalculadoraMain {
+public class TestCalc {
     public static void main(String[] args) {
         Calc calc = new Calc();
         calc.entrada();
