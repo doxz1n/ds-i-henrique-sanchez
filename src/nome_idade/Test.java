@@ -1,4 +1,4 @@
-package exercicio2;
+package nome_idade;
 
 public class Test {
     public static void main(String[] args) {

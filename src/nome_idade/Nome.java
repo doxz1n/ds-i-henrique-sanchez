@@ -1,4 +1,4 @@
-package exercicio2;
+package nome_idade;
 
 import javax.swing.*;
 

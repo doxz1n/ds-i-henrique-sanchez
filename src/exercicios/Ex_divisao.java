@@ -1,4 +1,4 @@
-package com.exercicicos;
+package exercicios;
 
 public class Ex_divisao {
     public static void main(String[] args) {
