@@ -1,4 +1,4 @@
-package Condicional;
+package condicional;
 
 public class Execucao {
     public static void main(String[] args) {

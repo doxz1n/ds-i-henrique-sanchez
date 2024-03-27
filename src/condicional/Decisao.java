@@ -1,4 +1,4 @@
-package Condicional;
+package condicional;
 
 import javax.swing.*;
 
